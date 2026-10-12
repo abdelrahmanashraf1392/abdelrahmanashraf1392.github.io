@@ -1,0 +1,23 @@
+@media (max-width: 991.98px) {
+  .nav-toggle { display: flex; }
+  .nav-panel { position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 1rem; padding: 1rem 1.25rem 1.5rem; background: var(--bg); border-bottom: 1px solid var(--border); box-shadow: var(--shadow); display: none; }
+  .nav-panel.is-open { display: flex; }
+  .nav-panel ul { flex-direction: column; }
+  .nav-panel li a { padding: .8rem .5rem; }
+  .nav-panel li a.active::after { left: .5rem; right: auto; width: 24px; }
+  .hero { padding: 3.5rem 0 4rem; }
+  .section { padding: 3.5rem 0; }
+}
+@media (max-width: 575.98px) {
+  .brand-name { font-size: .95rem; }
+  .hero-actions .btn-app { flex: 1 1 100%; }
+  .code-card { left: 0; font-size: .7rem; }
+  .cta { padding: 2.5rem 1.25rem; }
+  .skill-grid { grid-template-columns: 1fr 1fr; }
+  .skill-card { padding: .75rem; gap: .6rem; font-size: .88rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .orb { animation: none; }
+  * { transition-duration: .01ms !important; }
+}
